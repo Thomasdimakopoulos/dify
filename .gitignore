@@ -103,7 +103,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .env-local
 .venv
 env/
@@ -191,7 +190,6 @@ sdks/python-client/build
 sdks/python-client/dist
 sdks/python-client/dify_client.egg-info
 
-.vscode/*
 !.vscode/launch.json.template
 !.vscode/README.md
 pyrightconfig.json
@@ -210,3 +208,5 @@ mise.toml
 
 # Next.js build output
 .next/
+config.bat
+node_modules
