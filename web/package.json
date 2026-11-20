@@ -6,9 +6,9 @@
     "node": ">=v22.11.0"
   },
   "scripts": {
-    "dev": "node init && cross-env NODE_OPTIONS='--inspect' next dev",
-    "build": "node init && next build",
-    "start": "node init && cp -r .next/static .next/standalone/.next/static && cp -r public .next/standalone/public && cross-env PORT=$npm_config_port HOSTNAME=$npm_config_host node .next/standalone/server.js",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "cp -r .next/static .next/standalone/.next/static && cp -r public .next/standalone/public && cross-env PORT=$npm_config_port HOSTNAME=$npm_config_host node .next/standalone/server.js",
     "lint": "pnpm eslint --cache --cache-location node_modules/.cache/eslint/.eslint-cache",
     "lint-only-show-error": "pnpm eslint --cache --cache-location node_modules/.cache/eslint/.eslint-cache --quiet",
     "fix": "next lint --fix",
@@ -23,7 +23,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "node init && storybook build",
+    "build-storybook": "storybook build",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
