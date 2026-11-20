@@ -208,5 +208,6 @@ mise.toml
 
 # Next.js build output
 .next/
-config.bat
 node_modules
+
+config.bat
