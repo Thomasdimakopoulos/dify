@@ -246,4 +246,4 @@ export default combine(
       'tailwindcss/migration-from-tailwind-2': 'warn',
     },
   },
-)
+);
